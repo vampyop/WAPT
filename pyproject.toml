@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webguard-wapt"
+version = "0.3.0"
+description = "A bounded web application security assessment tool for authorized targets"
+readme = "README.md"
+requires-python = ">=3.10"
+[project.scripts]
+webguard = "webscan.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
